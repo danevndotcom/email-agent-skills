@@ -1,8 +1,3 @@
-
-**Step 6 - Create:** `management/email-organizer-skill.md`
-
-**Copy and paste this:**
-```
 # Email Organizer Skill
 
 ## Description
