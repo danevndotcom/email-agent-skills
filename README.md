@@ -5,7 +5,7 @@ A collection of AI agent skills for email automation, management, and intelligen
 ## 📋 Overview
 This repository contains various AI agent capabilities designed to handle email-related tasks, from basic automation to complex email understanding and response generation.
 
-## 🎯 Core Email Skills
+## 🎯 Core Email Skills 
 
 ### 1. **Email Processing**
 - Read and parse emails
