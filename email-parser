@@ -1,0 +1,57 @@
+# Email Parser Skill
+
+## Description
+This skill enables AI agents to parse and extract structured information from raw email data.
+
+## Capabilities
+- Extract sender information (name, email address)
+- Parse subject lines and identify key topics
+- Separate email body from signatures and replies
+- Extract dates, times, and deadlines
+- Identify recipients (To, CC, BCC)
+- Parse attachments metadata
+
+## Implementation Example
+def parse_email(raw_email):
+    """
+    Extract key components from an email
+    
+    Args:
+        raw_email (str): Raw email content
+        
+    Returns:
+        dict: Structured email data
+    """
+    parsed_data = {
+        'sender': extract_sender(raw_email),
+        'recipients': extract_recipients(raw_email),
+        'subject': extract_subject(raw_email),
+        'body': extract_body(raw_email),
+        'attachments': extract_attachments(raw_email),
+        'date': extract_date(raw_email),
+        'thread_id': extract_thread_id(raw_email)
+    }
+    return parsed_data
+
+## Output Format
+{
+  "sender": {
+    "name": "John Doe",
+    "email": "john@example.com"
+  },
+  "subject": "Project Update",
+  "body": "Here is the latest update on...",
+  "priority": "high",
+  "attachments": ["document.pdf"]
+}
+
+## Use Cases
+- Email automation workflows
+- Customer support ticket creation
+- Data entry automation
+- Email analytics and reporting
+
+## Limitations
+- May not handle all email formatting variations
+- Requires proper email access/permissions
+- Complex HTML emails may need additional processing
